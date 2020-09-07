@@ -1,0 +1,12 @@
+.region-details {
+  display: flex;
+  flex-direction: column;
+
+  &__hoverable {
+    cursor: pointer;
+
+    &:hover {
+      text-shadow: 0 0 1px #000;
+    }
+  }
+}

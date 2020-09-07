@@ -1,0 +1,22 @@
+body {
+  display: flex;
+  flex: 1;
+  min-height: 100%;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-height: 100%;
+}
+
+.ant-layout {
+  flex: inherit;
+
+  &-content {
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+  }
+}
