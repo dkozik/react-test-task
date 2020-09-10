@@ -1,13 +1,17 @@
 import React from "react";
+import block from 'bem-cn';
 import { bind } from "decko";
 import { Avatar, List, Card } from "antd";
 import { IDictionary, IRegion } from "../../types/responses";
 
+import './ListRegions.scss';
+
 interface IOwnProps {
   dictionary: IDictionary;
-
   onSelectRegion(index: number): void;
 }
+
+const b = block('list-regions');
 
 const { Item } = List;
 
@@ -17,10 +21,12 @@ class ListRegions extends React.PureComponent<TProps> {
   public render() {
     const { dictionary } = this.props;
     return (
-      <List
-        dataSource={dictionary}
-        renderItem={this.renderRegion}
-      />
+      <div className={b()}>
+        <List
+          dataSource={dictionary}
+          renderItem={this.renderRegion}
+        />
+      </div>
     );
   }
 

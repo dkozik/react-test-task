@@ -1,4 +1,12 @@
 .dictionary-container {
   display: flex;
-  padding: 21px 24px;
+
+  &__content {
+    padding: 21px 24px;
+    border-left: 1px solid #e8e8e8;
+  }
+
+  &__search-bar {
+    padding: 10px;
+  }
 }
